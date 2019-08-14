@@ -253,7 +253,7 @@
         // SPARQL query must deliver one variable with name "count"
         var sparqlQuery = q
         var encodedQuery = encodeURIComponent(sparqlQuery);
-        var queryUrl = 'https://api.data.adamlink.nl/datasets/AdamNet/all/services/endpoint/sparql?default-graph-uri=&query=' + encodedQuery + '&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
+        var queryUrl = 'https://api.druid.datalegend.net/datasets/adamnet/Heritage/services/Heritage/sparql?default-graph-uri=&query=' + encodedQuery + '&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
 
         fetch(queryUrl)
             .then((resp) => resp.json()) // transform the data into json
